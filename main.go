@@ -13,6 +13,7 @@ func main() {
 	fmt.Println("hello woeld")
 	var dumpPath, query string
 	flag.StringVar(&dumpPath, "p", "enwiki-latest-abstract1.xml", "wiki abstract dump path")
+	// if .xml file used then no decoder is needed in the utils.LoadDocuments function.
 	flag.StringVar(&query, "q", "Small wild cat", "search query")
 	flag.Parse()
 
